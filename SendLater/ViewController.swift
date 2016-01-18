@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        dateFormatter.dateFormat="EEEE, MMMM dd, yyyy' at 'h:mm a"
+        dateFormatter.dateFormat="EEEE, MMMM dd, yyyy' at 'hh:mm:ss a"
         messageView?.layer.borderColor = UIColor.blackColor().CGColor
         messageView?.layer.borderWidth = 1.0
         messageView?.editable = true
@@ -35,10 +35,10 @@ class ViewController: UIViewController {
         let parameters: [String: String] = [
             "message": (messageView?.text)!,
             "recipient": (toField?.text)!,
-            "sender:": "me?",
+            "sender": "iphone",
             "when": dateFormatter.stringFromDate((datePicker?.date)!)
         ]
-        Alamofire.request(.POST, "davidbieber.com/sendlater/message", parameters: parameters)
+        Alamofire.request(.POST, "https://davidbieber.com/sendlater/message/", parameters: parameters, encoding: .URL)
             .responseData { response in
                 print(response.request)  // original URL request
                 print(response.response) // URL response
