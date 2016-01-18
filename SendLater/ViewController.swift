@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dateFormatter.dateFormat="EEEE, MMMM dd, yyyy' at 'h:mm a"
+        messageView?.layer.borderColor = UIColor.blackColor().CGColor
+        messageView?.layer.borderWidth = 1.0
+        messageView?.editable = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +32,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMessage(sender: UIButton) {
-        print("HELLO")
         let parameters: [String: String] = [
             "message": (messageView?.text)!,
             "recipient": (toField?.text)!,
@@ -37,6 +39,12 @@ class ViewController: UIViewController {
             "when": dateFormatter.stringFromDate((datePicker?.date)!)
         ]
         Alamofire.request(.POST, "davidbieber.com/sendlater/message", parameters: parameters)
+            .responseData { response in
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+        }
     }
 }
 

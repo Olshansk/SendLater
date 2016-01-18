@@ -220,6 +220,7 @@
 				TargetAttributes = {
 					4D7287721C4C8A2B00F68664 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GH2F889887;
 					};
 					4D7287861C4C8A2B00F68664 = {
 						CreatedOnToolsVersion = 7.2;
@@ -473,6 +474,7 @@
 			baseConfigurationReference = 55A301861DEE7B33AA9341A2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SendLater/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olshansky.SendLater;
@@ -485,6 +487,7 @@
 			baseConfigurationReference = B8B29AEF8B40F89685F3FBF4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SendLater/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olshansky.SendLater;
