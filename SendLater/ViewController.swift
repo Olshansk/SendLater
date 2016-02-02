@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker?
     @IBOutlet weak var messageView: UITextView?
     @IBOutlet weak var toField: UITextField?
-    @IBOutlet weak var sendButton: UIButton?
+    @IBOutlet weak var sendButton: UIBarButtonItem?
     
     let dateFormatter = NSDateFormatter()
 

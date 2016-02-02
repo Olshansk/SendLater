@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D0BB8E31C4D72DB004B83AB /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0BB8E21C4D72DB004B83AB /* MessagesTableViewController.swift */; };
+		4D0BB8E51C4D9FA9004B83AB /* SendMessageSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0BB8E41C4D9FA9004B83AB /* SendMessageSegue.swift */; };
 		4D7287771C4C8A2B00F68664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7287761C4C8A2B00F68664 /* AppDelegate.swift */; };
 		4D7287791C4C8A2B00F68664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7287781C4C8A2B00F68664 /* ViewController.swift */; };
 		4D72877C1C4C8A2B00F68664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D72877A1C4C8A2B00F68664 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		0AF72C098811A98B454D3558 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0BB8E21C4D72DB004B83AB /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		4D0BB8E41C4D9FA9004B83AB /* SendMessageSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageSegue.swift; sourceTree = "<group>"; };
 		4D7287731C4C8A2B00F68664 /* SendLater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendLater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7287761C4C8A2B00F68664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7287781C4C8A2B00F68664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				4D7287781C4C8A2B00F68664 /* ViewController.swift */,
 				4D0BB8E21C4D72DB004B83AB /* MessagesTableViewController.swift */,
 				4D72877A1C4C8A2B00F68664 /* Main.storyboard */,
+				4D0BB8E41C4D9FA9004B83AB /* SendMessageSegue.swift */,
 				4D72877D1C4C8A2B00F68664 /* Assets.xcassets */,
 				4D72877F1C4C8A2B00F68664 /* LaunchScreen.storyboard */,
 				4D7287821C4C8A2B00F68664 /* Info.plist */,
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0BB8E31C4D72DB004B83AB /* MessagesTableViewController.swift in Sources */,
+				4D0BB8E51C4D9FA9004B83AB /* SendMessageSegue.swift in Sources */,
 				4D7287791C4C8A2B00F68664 /* ViewController.swift in Sources */,
 				4D7287771C4C8A2B00F68664 /* AppDelegate.swift in Sources */,
 			);
